@@ -1,0 +1,30 @@
+{
+  "name": "@noise-type/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "lint": "bun x ultracite fix",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && bun x ultracite check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.8",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.48.5",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "lint-staged": "^16.2.7",
+    "svelte": "^5.43.8",
+    "svelte-check": "^4.3.4",
+    "typescript": "^5.9.3",
+    "ultracite": "6.3.10",
+    "vite": "^7.2.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "bun x ultracite fix"
+    ]
+  }
+}
