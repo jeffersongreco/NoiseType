@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "./page.css";
+  import Grid from "$lib/components/Grid.svelte";
 </script>
 
 <svelte:head>
@@ -7,5 +7,15 @@
 </svelte:head>
 
 <main>
-  <h1>Noise Type</h1>
+  <Grid />
 </main>
+
+<style>
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px;
+  }
+</style>
