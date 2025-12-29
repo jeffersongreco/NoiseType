@@ -1,3 +1,7 @@
+---
+applyTo: "**/*.{ts,js,svelte}"
+---
+
 # Svelte Code Standards
 
 You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
